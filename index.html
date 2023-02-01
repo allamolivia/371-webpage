@@ -4,8 +4,31 @@
     <head>
         <meta charset=”UTF-8”>
         <title>New Page</title>
+        <style>
+            #mybox {
+                display: grid;
+                min-height: 100vh;
+                grid-template-rows: 30% 15% 40% 15%;
+                grid-template-columns: 100px auto auto 100px;
+                grid-template-areas:
+                "area1 area2 area2 area2"
+                "area3 area4 area4 area5"
+                "area3 area6 area7 area7"
+                "area3 area8 area8 area8";
+                gap: 2px;
+            }
+        </style>
     </head>
     <body>
-        <p>Hello world!</p>
+        <div id="newbox">
+            <span id="area1">Area 1</span>
+            <span id="area2">Area 2</span>
+            <span id="area3">Area 3</span>
+            <span id="area4">Area 4</span>
+            <span id="area5">Area 5</span>
+            <span id="area6">Area 6</span>
+            <span id="area7">Area 7</span>
+            <span id="area8">Area 8</span>
+        </div>
     </body>
 </html>
