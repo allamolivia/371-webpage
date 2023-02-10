@@ -4,6 +4,7 @@
     <head>
         <meta charset=”UTF-8”>
         <title>New Page</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <style>
             #newbox {
                 display: grid;
@@ -21,37 +22,30 @@
                 text-align: center;
                 color: white;
                 padding: 1em;
-            }
-            #area1 {
                 background: black;
+            }
+            #area1 {     
                 grid-area: area1
             }
             #area2 {
-                background: black;
                 grid-area: area2
             }
             #area3 {
-                background: black;
                 grid-area: area3
             }
             #area4 {
-                background: black;
                 grid-area: area4
             }
             #area5 {
-                background: black;
                 grid-area: area5
             }
             #area6 {
-                background: black;
                 grid-area: area6
             }
             #area7 {
-                background: black;
                 grid-area: area7
             }
             #area8 {
-                background: black;
                 grid-area: area8
             }
 
@@ -82,48 +76,7 @@
                 </p>
             </span>
             <span id="area4">
-                <table>
-                    <tr>
-                        <th>Course Number</th>
-                        <th>Course Name</th>
-                        <th>Semester Takem</th>
-                    </tr>
-                    <tr>
-                        <td>ANT 345</td>
-                        <td>Global Perspectives</td>
-                        <td>Fall 2021</td>
-                    </tr>
-                    <tr>
-                        <td>CIS 241</td>
-                        <td>System Level Programming and Utilities</td>
-                        <td>Fall 2021</td>
-                    </tr>
-                    <tr>
-                        <td>CIS 263</td>
-                        <td>Data Structures and Algorithms</td>
-                        <td>Winter 2022</td>
-                    </tr>
-                    <tr>
-                        <td>CIS 351</td>
-                        <td>Computer Org & Assembly</td>
-                        <td>Winter 2022</td>
-                    </tr>
-                    <tr>
-                        <td>CIS 343</td>
-                        <td>Structure of Programming Languages</td>
-                        <td>Fall 2022</td>
-                    </tr>
-                    <tr>
-                        <td>CIS 457</td>
-                        <td>Data Communications</td>
-                        <td>Fall 2022</td>
-                    </tr>
-                    <tr>
-                        <td>CIS 371</td>
-                        <td>Web Application Programming</td>
-                        <td>Winter 2023</td>
-                    </tr>
-                </table>
+                <div id="area4-table"></div>
             </span>
             <span id="area5">
                 <div style="text-align: center; vertical-align: middle; display: table-cell;">
@@ -132,8 +85,7 @@
             </span>
             <span id="area6">
                 <ul>
-                    <li><a href="https://www.dow.com/en-us">Dow</a></li>
-                    <li><a href="https://www.ford.com/">Ford</a></li>
+                    <div id="area6-list"></div>
                 </ul>
             </span>
             <span id="area7">
@@ -145,8 +97,8 @@
                 </p>
             </span>
             <span id="area8">
-               
-                    <div>
+                <div id="area8-icons"></div>
+                    <!--div>
                         <a href="https://www.instagram.com/"><img src="instagram.png" height = "75"></a>
                     </div>
                     <div>
@@ -160,9 +112,10 @@
                     </div>
                     <div>
                         <a href="https://www.amazon.com/"><img src="amazon.png" height = "75"></a>
-                    </div>
+                    </div-->
               
             </span>
         </div>
+        <script type="text/babel" src="mycode.ts"></script>
     </body>
 </html>
